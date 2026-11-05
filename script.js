@@ -1,10 +1,25 @@
-let product = "Spinach"
-let farmer ="Mnotho"
-let price = 12;
+function calculateTotal(shopper, product, price, quaintity) {
+    return "Shopper:"+ shopper + "\n" +
+            "Product:"+ product + "\n"+
+            "Quantity:"+ quaintity + "\n"+
+            "Price: R"+ price + "\n"+
+            "Total: R"+ price * quaintity;
+}
 
-console.log("Farmer:", farmer);
-console.log("Product:", product);
-console.log("Price:","R", price);
+console.log(calculateTotal("Mnotho", "spinach", 50, 5,));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
