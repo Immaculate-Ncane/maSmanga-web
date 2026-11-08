@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-    <html lang="eng">
+    <html lang="en">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
             <title>maSmanga Market Place</title>
         </head>
     
         <body>
-            <h1>maSmanga Market Place</h1>
-            <p>Freshly produced directly from local farmers</p>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-leaf"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 21c.5 -4.5 2.5 -8 7 -10" /><path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3l.014 0" /></svg>
+                    <h1>maSmanga Market Place</h1>
+                </a>
+                <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Market</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
-            <main>
-                <div class="products">
-                    <h2>Grape Tomatoes</h2>
-                    <p>R20/kg</p>
-                    <h2>Organic Fertilizer</h2>
-                    <p>R50/kgs</p>
-                    <h2>Onion</h2>
-                    <p>R20/kg</p>
-                    <h2>Coriander</h2>
-                    <p>R20</p>
+            <main class="hero">
+                <div class="hero-text">
+                    <p class="label">FRESH FROM LOCAL FARMERS</p>
+                    <h1>Freshly Produced, <span>Naturally Grown</span></h1>
+                    <p class="intro">Buy seeds, fertilizer and fresh produce straight from farmers near you.</p>
+
+                    <div class="hero-buttons">
+                        <a href="products.html" class="hero-btn shop">Shop now</a>
+                        <a href="signup.html" class="hero-btn signUp">Sign up</a>
+                    </div>
+                        <p class="signin-line">Already have an account? <a href="login.html">Sign in</a></p>
                 </div>
+                <div class="hero-pictures"></div>
             </main>
             <script src="script.js"></script>
         </body>
