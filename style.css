@@ -8,8 +8,6 @@ body{
     font-weight: white;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
     color: white;
     margin: 0;
     padding: 20px;
@@ -210,176 +208,112 @@ body{
 }
 
 /*Product section starts here*/
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .product{
     gap: 16px;
-    display: flex;
+    color: white;
     padding: 14px;
+    display: flex;
     align-items: center;
     border-radius: 12px;
     background-color: #27500a;
-
 }
 .product-image{
-    width: 150px;
     height: 150px;
+    width: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 55px;
 }
-
-.product-info {
+.product-info{
     flex: 1;
 }
-
 .product-name,
-.product-price {
+.product-price{
     margin: 0;
 }
-
-.product-price {
+.product-price{
     margin-bottom: 10px;
 }
 .product-buttons{
+    gap: 12px;
     display: flex;
-    gap: 15px;
 }
 .seeds-btn,
 .cart-btn{
     border: 0;
-    padding: 5px;
+    padding: 8px 14px;
     border-radius: 12px;
-}
-.seeds-btn,
-.cart-btn:hover{
     cursor: pointer;
+    color: #173404;
 }
 .seeds-btn{
-    color: black;
-    background-color: #8ADC04;
+    background-color: #8adc04;
 }
-.product-2{
-    gap: 16px;
-    display: flex;
-    padding: 14px;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #27500a;
+.cart-btn{
+    background-color: white;
 }
-.product-2-image{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+.seeds-btn:hover,
+.cart-btn:hover{
+    opacity: 0.85;
 }
-.product-2-info{
-    flex: 1;
+.product.sold-out{
+    opacity: 0.5;
 }
-.product-2-name,
-.product-2-price{
-    margin: 0;
-}
-.product-2-price{
-    margin-bottom: 10px;
-}
-.product-2-buttons{
-    gap: 15px;
-    display: flex;
-}
-.product-2-seeds,
-.product-2-cart{
-    cursor: pointer;
-   border: 0;
-   padding: 5px;
-   border-radius: 12px;
-}
-.product-2-seeds{
-    background-color:#8ADC04;
-}
-.product-2-seeds,
-.product-2-cart:hover{
-    cursor: pointer;
+.stock-label{
+    color: #412402;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-left: 6px;
+    border-radius: 6px;
+    background-color: #f7941d;
 }
 
-.product-3{
-    gap: 16px;
+.signup-page{
+    padding: 0;
+}
+.signup-headings{
     display: flex;
-    padding: 14px;
     align-items: center;
-    border-radius: 12px;
-    background-color: #27500a;
+    justify-content: center;
+    flex-direction: column;
 }
-.product-3-image{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+.signup-h3,
+.signup-intro{
+    color: #457A00;
 }
-.product-3-info{
-    flex: 1;
+.signup-intro{
+    margin: 0 0 22px;
+    max-width: 250px;
+    line-height: 1.6;
+    text-align: center;
 }
-.product-2-name,
-.product-2-price{
-    margin: 0;
+.form-area{
+    padding: 18px 20px 6px;
+    margin: 18px auto 0;
 }
-.product-3-price{
-    margin-bottom: 10px;
-}
-.product-3-buttons{
-    gap: 15px;
+.form{
+    gap: 20px;
+    padding: 50px;
     display: flex;
-}
-.product-3-seeds,
-.product-3-cart{
-    cursor: pointer;
-   border: 0;
-   padding: 5px;
-   border-radius: 12px;
-}
-.product-3-seeds{
-    background-color:#8ADC04;
-}
-.product-3-seeds,
-.product-3-cart:hover{
-    cursor: pointer;
-}
-.product-4{
-    gap: 16px;
-    display: flex;
-    padding: 14px;
+    border-color: #3a7d00;
+    border-radius: 10px;
     align-items: center;
-    border-radius: 12px;
-    background-color: #27500a;
+    flex-direction: column;
+    /*background-color: #27500a;*/
 }
-.product-4-image{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.product-4-info{
-    flex: 1;
-}
-.product-4-name,
-.product-4-price{
-    margin: 0;
-}
-.product-4-price{
-    margin-bottom: 10px;
-}
-.product-4-buttons{
-    gap: 15px;
-    display: flex;
-}
-.product-4-seeds,
-.product-4-cart{
-    cursor: pointer;
-   border: 0;
-   padding: 5px;
-   border-radius: 12px;
-}
-.product-4-seeds{
-    background-color:#8ADC04;
-}
-.product-4-seeds,
-.product-4-cart:hover{
-    cursor: pointer;
+input{
+    width: 50%;
+    height:30px;
+    padding: 12px 16px;
+    border: 1.5px solid #3a7d00;
+    border-radius: 12px; 
+    box-sizing: border-box;
+    background-color: transparent;
 }
