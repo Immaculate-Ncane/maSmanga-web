@@ -9,7 +9,7 @@
 <body class="signup-page">
 
     <div class="signup-headings">
-        <h3 class="signup-h3">Create account?</h3>
+        <h2 class="signup-h3">Create account</h2>
         <p class="signup-intro">Join maSmanga Market Place and, start buying fresh produce</p>
     </div>
 
@@ -17,15 +17,42 @@
         <div class="form">
             <input type="text" id="name-input" placeholder="Name">
             <input type="email" id="email-input" placeholder="Email">
-            <input type="number" id="number-input" placeholder="Phone number">
+            <input type="tel" id="number-input" placeholder="Phone number">
             <input type="password" id="password-input" placeholder="password">
         </div>
     </section>
+    <div class="checkbox-group">
+        <h3>Account type:</h3>
+        <div class="checkbox-options">
+            <label class="checkbox-item" for="farmer">
+                <input type="radio" id="farmer" name="accountType" value="farmer">
+                Farmer
+            </label>
 
-    <div class="">
-
+            <label class="checkbox-item" for="shopper">
+                <input type="radio" id="shopper" name="accountType" value="shopper">
+                Shopper
+            </label>
+        </div>
     </div>
 
+    <div class="create-button">
+            <button class="create-btn">Create account</button>
+        </div>
+
+        <div class="save-account-option">
+        <label class="remember-checkbox" for="rememberMe">
+            <input type="checkbox">
+            Remember me
+        </label>
+        <a href="#">Forgot password</a>
+        </div>
+
+        <div class="account-exist">
+            Already have an account?
+            <a href="singin.html">Sign in</a>
+        </div>
+        
 <script src="script.js"></script> 
 </body>
 </html>

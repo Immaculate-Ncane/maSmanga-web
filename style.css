@@ -1,6 +1,5 @@
 body{
     background-color: #D5EF6A;
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -276,7 +275,8 @@ body{
 }
 
 .signup-page{
-    padding: 0;
+    margin: 0;
+    padding: 30px;
 }
 .signup-headings{
     display: flex;
@@ -296,7 +296,7 @@ body{
 }
 .form-area{
     padding: 18px 20px 6px;
-    margin: 18px auto 0;
+    margin: 1px auto 0;
 }
 .form{
     gap: 20px;
@@ -316,4 +316,76 @@ input{
     border-radius: 12px; 
     box-sizing: border-box;
     background-color: transparent;
+}
+.checkbox-group {
+    margin-right: 37%;
+    margin-top: 0;
+    color: #27500a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .checkbox-item {
+    margin-right: 50px;
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .checkbox-item input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .create-button{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .create-btn{
+    border: none;
+    width: 20%;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #27500a;
+    transition: background-color 2.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .create-btn:hover {
+    background-color: #8ADC04;
+}
+.save-account-option{
+    display: flex;
+    color: #3a7d00;
+    font-weight: lighter;
+    gap: 54px;
+    justify-content: center;
+    margin-top: 2%;
+}
+.remember-checkbox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.save-account-option a{
+    color: #3a7d00;
+    text-decoration: none;
+}
+.account-exist{
+    gap: 10px;
+    color: #3a7d00;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.account-exist a{
+    text-decoration: none;
+    color: #f7941d;
+    font-weight: bold;
 }
