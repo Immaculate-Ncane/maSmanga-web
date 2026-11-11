@@ -29,7 +29,7 @@ body{
     font-size: 20px;
     text-decoration: none;
 }
-.logo svg{
+.logo img{
     width: 26px;
     height: 26px;
 }
@@ -110,11 +110,12 @@ body{
     font-weight: bold;
 }
 .hero-pictures {
-    flex: 1 1 300px;
-    margin-top: 60px;
-    min-height: 280px;
-    background-color: #3a7d00;
-    border-radius: 140px 24px 140px 24px;
+    width: 50%;
+    max-width: none; /* Removes any width cap */
+    height: 320px;   /* Keeps a clean, balanced height */
+    object-fit: cover;
+    border-radius: 100px 16px 100px 16px;
+    display: block;
 }
 
 /*Product page styling starts here*/
@@ -482,4 +483,153 @@ input{
     text-decoration: none;
     color: #f7941d;
     font-weight: bold;
+}
+.nav-family{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-family-links{
+    display: flex;
+    gap:50px;
+    margin-right: 25px;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+}
+.nav-family-links a{
+    text-decoration: none;
+    color: #27500a;
+}
+.nav-family-links a:hover{
+    color: #f7941d;
+}
+.hero-section{
+    justify-content: space-between;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: larger;
+}
+.hero-section-text{
+    padding: 2px;
+}
+.hero-section-text p{
+    color: #27500a;
+}
+.hero-section-text h1{
+    color: #27500a;
+}
+.hero-section-image{
+    width: 45%;
+    max-width: none; /* Removes any width cap */
+    height: 320px;   /* Keeps a clean, balanced height */
+    object-fit: cover;
+    border-radius: 100px 16px 100px 16px;
+    display: block;
+}
+.first-column img,
+.second-column img,
+.third-column img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    display: block;
+}
+.columns{
+    margin-top: 2.1%;
+    display: flex;
+    gap: 24px;
+    padding: 0 24px 40px;
+}
+.first-column h2,
+.second-column h2,
+.third-column h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    flex: 1;
+    background-color: #27500a;
+    color: #ffffff;
+    padding: 10px 10px; /* Adds breathing room inside the card */
+    border-radius: 20px;
+    height: auto; /* Removes any tall fixed height */
+    min-height: unset;
+}
+.final-column {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 24px 40px;
+    box-sizing: border-box;
+}
+.fourth-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-color: #1f4408;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1100px;
+    padding: 28px 44px;
+    border-radius: 999px;
+    box-sizing: border-box;
+}
+.banner-text {
+    text-align: left;
+    max-width: 650px;
+}
+
+.banner-text h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #e4f0d8;
+}
+
+/* Right-aligned orange pill button */
+.fourth-column-btn {
+    background-color: #f49328;
+    color: #1f2e12;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.fourth-column-btn:hover {
+    background-color: #e0821b;
+}
+
+/* Stacks cleanly on small phone screens */
+@media (max-width: 768px) {
+    .fourth-column {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 28px;
+        padding: 28px 24px;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
 }
