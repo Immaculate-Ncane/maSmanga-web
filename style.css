@@ -596,3 +596,96 @@ ul{
 .fourth-column-btn:hover{
     background-color: #8adc04;
 }
+.Main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.white-container{
+    background-color: white;
+    border-radius: 10px;
+    height: 700px;
+    width: 500px;
+    border-radius: 10px;
+}
+.green-container{
+    background-color: #173404;
+    height: 200px;
+    width: 500px;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+}
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+}
+.the-logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: #8ADC04;
+    text-decoration: none;
+}
+.the-logo svg{
+    stroke: #8ADC04;
+    flex-shrink: 0;
+}
+.the-logo h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.green-container-navlinks{
+    display: inline-flex;
+    gap: 10px;
+    font-size:12px; 
+}
+.green-container-navlinks a{
+    text-decoration: none;
+    color: white;
+}
+.green-container-navlinks a:hover{
+    color: #f7941d;
+}
+.navigation-container-text{
+    gap: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+}
+.navigation-container-text h4,
+.navigation-container-text p{
+    margin:1%;
+}
+.navigation-container-text p{
+    font-size: x-small;
+}
+.navigation-container-text h4 span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation-container-text h4{
+    font-size: larger;
+}
+.contact-page-cards{
+    display: flex;
+    gap: 5px;
+}
+.first-card{
+    border-radius: 20px;
+    background-color: #3a7d00;
+    box-sizing: border-box;
+}
+.first-card p h4{
+    margin: 0%;
+}
+.second-card{
+    border-radius: 20px;
+    background-color: #27500a;
+}
