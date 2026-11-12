@@ -34,11 +34,10 @@ body{
     height: 26px;
 }
 .nav-links{
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
+   display: flex;
+    gap:50px;
+    margin-right: 25px;
+    padding: 20px;
 
 }
 .nav-links a{
@@ -505,31 +504,39 @@ ul{
 .nav-family-links a:hover{
     color: #f7941d;
 }
-.hero-section{
-    justify-content: space-between;
-    display: flex;
-    margin-right: 5%;
-    margin-left: 1%;
-    margin-top: 1%;
-    font-size: larger;
+.hero-section {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-right: 5%;
+  margin-left: 1%;
+  margin-top: 1%;
+  font-size: larger;
 }
-.hero-section-text{
-    padding: 2px;
+
+.hero-section-text {
+  padding: 2px;
+  width: 50%; /* Gives the paragraph enough room to flow naturally without pushing the image */
 }
-.hero-section-text p{
-    color: #27500a;
+
+.hero-section-text p {
+  color: #27500a;
+  line-height: 1.5; /* Improves readability */
 }
-.hero-section-text h1{
-    color: #27500a;
+
+.hero-section-text h1 {
+  color: #27500a;
 }
-.hero-section-image{
-    width: 45%;
-    max-width: none; /* Removes any width cap */
-    height: 320px;   /* Keeps a clean, balanced height */
-    object-fit: cover;
-    border-radius: 100px 16px 100px 16px;
-    display: block;
+
+.hero-section-image {
+  width: 45%;
+  max-width: none;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 100px 16px 100px 16px;
+  display: block;
 }
+
 .first-column img,
 .second-column img,
 .third-column img{
@@ -563,73 +570,29 @@ ul{
     height: auto; /* Removes any tall fixed height */
     min-height: unset;
 }
-.final-column {
+.final-column{
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 20px 24px 40px;
-    box-sizing: border-box;
 }
-.fourth-column {
+.fourth-column{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    background-color: #1f4408;
-    color: #ffffff;
-    width: 100%;
-    max-width: 1100px;
-    padding: 28px 44px;
-    border-radius: 999px;
+    gap: 20px;
     box-sizing: border-box;
+    border-radius: 80px;
+    background-color: #27500a;
+    padding: 20px 40px;
 }
-.banner-text {
-    text-align: left;
-    max-width: 650px;
-}
-
-.banner-text h1 {
-    margin: 0 0 8px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.banner-text p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.45;
-    color: #e4f0d8;
-}
-
-/* Right-aligned orange pill button */
-.fourth-column-btn {
-    background-color: #f49328;
-    color: #1f2e12;
+.fourth-column-btn{
+    height: 35px;
+    width: 200px;
     border: none;
-    padding: 14px 30px;
-    border-radius: 999px;
-    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 3%;
+    background-color: #f7941d;
+    color: white;
     font-weight: bold;
-    white-space: nowrap;
     cursor: pointer;
-    flex-shrink: 0;
 }
-
-.fourth-column-btn:hover {
-    background-color: #e0821b;
-}
-
-/* Stacks cleanly on small phone screens */
-@media (max-width: 768px) {
-    .fourth-column {
-        flex-direction: column;
-        text-align: center;
-        border-radius: 28px;
-        padding: 28px 24px;
-    }
-
-    .banner-text {
-        text-align: center;
-    }
+.fourth-column-btn:hover{
+    background-color: #8adc04;
 }
